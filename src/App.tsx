@@ -6,7 +6,7 @@ const App: React.FC = () => {
 		<>
 			<div className='App'>
 				<span className='heading'>
-					<h1>Hello World!!!</h1>
+					<h3>tasker</h3>
 				</span>
 				<div>
 					<InputField />
