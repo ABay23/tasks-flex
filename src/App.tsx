@@ -15,7 +15,11 @@ const App: React.FC = () => {
 		}
 	}
 
-	console.log(todo)
+	const todoDisplay = () => {
+		return todos.map((t) => <li key={t.id}>{t.todo}</li>)
+	}
+
+	console.log(todos)
 
 	return (
 		<>
@@ -26,6 +30,7 @@ const App: React.FC = () => {
 				<div>
 					<InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
 				</div>
+				<div>{todoDisplay()}</div>
 			</div>
 		</>
 	)
