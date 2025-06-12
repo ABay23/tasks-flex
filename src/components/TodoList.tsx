@@ -7,7 +7,13 @@ interface Props {
 }
 
 const TodoList: React.FC<Props> = ({ todos, setTodos }: Props) => {
-	return <div>TodoList</div>
+	return (
+		<div className='todos'>
+			{todos.map((t) => (
+				<li>{t.todo}</li>
+			))}
+		</div>
+	)
 }
 
 export default TodoList
